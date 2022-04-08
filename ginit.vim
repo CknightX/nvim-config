@@ -4,7 +4,7 @@ set mouse=a
 " Set Editor Font
 if exists(':GuiFont')
     " Use GuiFont! to ignore font errors
-    GuiFont! sarasa term sc:h12
+    GuiFont! sarasa mono sc nerd:h12
 endif
 
 " Disable GUI Tabline

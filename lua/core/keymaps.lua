@@ -29,21 +29,24 @@ mapcmd('<leader>cq', 'q')
 mapcmd('<leader>cQ', 'q!')
 mapcmd('<leader>cx', 'x')
 -- w: window
-mapkey('n', '<leader>wh', '<c-w>h')
-mapkey('n', '<leader>wj', '<c-w>j')
-mapkey('n', '<leader>wk', '<c-w>k')
-mapkey('n', '<leader>wl', '<c-w>l')
+mapkey('n', '<m-h>', '<c-w>h')
+mapkey('n', '<m-H>', '<c-w>H')
+mapkey('n', '<m-j>', '<c-w>j')
+mapkey('n', '<m-k>', '<c-w>k')
+mapkey('n', '<m-l>', '<c-w>l')
+mapkey('n', '<m-L>', '<c-w>L')
+
 mapkey('n', '<leader>w1', '<c-w>o')
 mapcmd('<leader>wx', 'x')
-mapcmd('<leader>w2', 'sp')
-mapcmd('<leader>w3', 'vs')
+mapcmd('<leader>ws', 'sp')
+mapcmd('<leader>wv', 'vs')
 -- window resize
-mapkey('n', '<m-9>', '<c-w><')
-mapkey('n', '<m-0>', '<c-w>>')
-mapkey('n', '<m-->', '<c-w>-')
-mapkey('n', '<m-=>', '<c-w>+')
-mapkey('n', '<m-r>', 'resize<space>')
-mapkey('n', '<m-t>', 'vertical resize<space>')
+mapkey('n', '<m-right>', '<c-w><')
+mapkey('n', '<m-left>', '<c-w>>')
+mapkey('n', '<m-up>', '<c-w>-')
+mapkey('n', '<m-down>', '<c-w>+')
+mapcmd('n', '<m-r>', 'resize<space>')
+mapcmd('n', '<m-t>', 'vertical resize<space>')
 -- b: buffer
 mapcmd('<leader>bn', 'bn')
 mapcmd('<leader>bp', 'bp')
@@ -52,8 +55,12 @@ mapcmd('<leader>bd', 'Bdelete')
 mapcmd('<leader>pi', 'PackerInstall')
 mapcmd('<leader>pc', 'PackerClean')
 -- s: search
-mapkey('n', '<leader>ss', '/')
 mapkey('n', '<leader>sw', '/\\<lt>\\><left><left>')
+-- r: replace
+-- 替换一行
+mapkey('n', '<leader>rl', ':s///g<left><left><left>')
+-- 替换所有
+mapkey('n', '<leader>ra', ':1,$s///g<left><left><left>')
 -- l/g/w: language
 -- l: general
 -- g: goto

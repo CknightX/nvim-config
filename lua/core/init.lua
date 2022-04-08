@@ -6,7 +6,7 @@ vim.cmd([[
 ]])
 
 vim.opt.number          = true
-vim.opt.relativenumber  = true
+vim.opt.relativenumber  = false
 vim.opt.termguicolors   = true
 vim.opt.shiftround      = true
 vim.opt.updatetime      = 100
@@ -47,8 +47,11 @@ require("core.theme")
 require("impatient")
 require("bufferline").setup()
 require("Comment").setup()
--- require("code_runner").setup({})
 
+-- myplugins
+require("myplugins.autorun").setup()
+
+-- plugins with config
 require("configs.autocomplete").config()
 require("configs.statusline").config()
 require("configs.filetree").config()
@@ -57,24 +60,3 @@ require("configs.outlinetree").config()
 require("configs.startscreen").config()
 require("configs.telescope").config()
 require("configs.bufferline").config()
-
-vim.cmd([[
-" 代码一键运行
-map <F5> :call AutoCompileRun()<CR>
-func! AutoCompileRun()
-    exec "w" 
-    if &filetype == 'c' 
-        exec '!g++ % -o %<'
-        exec '!./%<'
-    elseif &filetype == 'cpp'
-        exec '!g++ % -o %<'
-        exec '!./%<'
-    elseif &filetype == 'python'
-        exec '!python %'
-    elseif &filetype == 'sh'
-        :!bash %
-    elseif &filetype == 'go'
-        exec '!go run %'
-    endif                                                                              
-endfunc 
-]])
