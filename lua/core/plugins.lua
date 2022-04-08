@@ -2,11 +2,11 @@
 vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function()
     use 'wbthomason/packer.nvim'
-	-- 符号补全
-	use 'jiangmiao/auto-pairs'
+    -- 符号补全
+    use 'jiangmiao/auto-pairs'
     -- use 'windwp/nvim-autopairs'
-	-- 缩进线
-	use 'Yggdroot/indentLine'
+    -- 缩进线
+    use 'Yggdroot/indentLine'
     -- starup time optimise
     use 'dstein64/vim-startuptime'
     use 'lewis6991/impatient.nvim'
@@ -14,6 +14,11 @@ return require('packer').startup(function()
     -- 一键注释
     use {
         'numToStr/Comment.nvim'
+    }
+    -- 一键代码运行
+    use {
+        'CRAG666/code_runner.nvim',
+        requires = 'nvim-lua/plenary.nvim'
     }
 
     -- buffer
