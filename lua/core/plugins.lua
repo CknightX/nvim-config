@@ -4,12 +4,17 @@ return require('packer').startup(function()
     use 'wbthomason/packer.nvim'
 	-- 符号补全
 	use 'jiangmiao/auto-pairs'
+    -- use 'windwp/nvim-autopairs'
 	-- 缩进线
 	use 'Yggdroot/indentLine'
     -- starup time optimise
     use 'dstein64/vim-startuptime'
     use 'lewis6991/impatient.nvim'
     use 'nathom/filetype.nvim'
+    -- 一键注释
+    use {
+        'numToStr/Comment.nvim'
+    }
 
     -- buffer
     use {
@@ -20,6 +25,7 @@ return require('packer').startup(function()
 
     -- themes (disabled other themes to optimize startup time)
     use 'sainnhe/sonokai'
+    use 'hzchirs/vim-material'
 --    use 'joshdick/onedark.vim'
 --    use { 'catppuccin/nvim', as='catppuccin' }
 --    use { 'sonph/onehalf', rtp='vim/' }
