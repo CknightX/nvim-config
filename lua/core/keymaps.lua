@@ -17,7 +17,7 @@ end
 mapcmd('<leader>ft', 'NvimTreeToggle')
 mapcmd('<leader>ff', 'NvimTreeFocus')
 -- y: telescope
-mapcmd('<leader>yo', "Telescope find_files")
+mapcmd('<leader>yf', "Telescope find_files")
 mapcmd('<leader>yg', "Telescope live_grep")
 mapcmd('<leader>yb', "Telescope buffers")
 -- c: quick command
