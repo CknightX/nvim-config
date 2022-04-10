@@ -41,8 +41,8 @@ mapcmd('<leader>wx', 'x')
 mapcmd('<leader>ws', 'sp')
 mapcmd('<leader>wv', 'vs')
 -- window resize
-mapkey('n', '<m-right>', '<c-w><')
-mapkey('n', '<m-left>', '<c-w>>')
+mapkey('n', '<m-left>', '<c-w><')
+mapkey('n', '<m-right>', '<c-w>>')
 mapkey('n', '<m-up>', '<c-w>-')
 mapkey('n', '<m-down>', '<c-w>+')
 mapcmd('n', '<m-r>', 'resize<space>')
@@ -53,6 +53,8 @@ mapcmd('n', '<m-t>', 'vertical resize<space>')
 mapcmd('<m-o>', 'bn')
 mapcmd('<m-i>', 'bp')
 mapcmd('<leader>bd', 'Bdelete')
+mapkey('n','<leader>bsm','40<c-w>|') -- buffer small
+mapkey('n','<leader>bla','200<c-w>|') -- buffer large
 -- p: plugins
 mapcmd('<leader>pi', 'PackerInstall')
 mapcmd('<leader>pc', 'PackerClean')
