@@ -49,6 +49,7 @@ require("Comment").setup()
 
 -- myplugins
 require("myplugins.autorun").setup()
+require("myplugins.paramjump").setup()
 
 -- plugins with config
 require("configs.autocomplete").config()
