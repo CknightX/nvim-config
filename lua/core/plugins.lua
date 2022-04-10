@@ -12,14 +12,7 @@ return require('packer').startup(function()
     use 'lewis6991/impatient.nvim'
     use 'nathom/filetype.nvim'
     -- 一键注释
-    use {
-        'numToStr/Comment.nvim'
-    }
-    -- 一键代码运行
-    use {
-        'CRAG666/code_runner.nvim',
-        requires = 'nvim-lua/plenary.nvim'
-    }
+    use 'numToStr/Comment.nvim'
 
     -- buffer
     use {
@@ -74,6 +67,8 @@ return require('packer').startup(function()
         'nvim-telescope/telescope.nvim',
         requires = 'nvim-lua/plenary.nvim'
     }
+    -- surround
+    use 'tpope/vim-surround'
 
     -- startup screen
 --    use '~/Developer/aleph-nvim'

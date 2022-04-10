@@ -45,7 +45,6 @@ require("core.theme")
 -- Load plugin configs
 -- plugins without extra configs are configured directly here
 require("impatient")
-require("bufferline").setup()
 require("Comment").setup()
 
 -- myplugins

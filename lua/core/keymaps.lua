@@ -48,8 +48,10 @@ mapkey('n', '<m-down>', '<c-w>+')
 mapcmd('n', '<m-r>', 'resize<space>')
 mapcmd('n', '<m-t>', 'vertical resize<space>')
 -- b: buffer
-mapcmd('<leader>bn', 'bn')
-mapcmd('<leader>bp', 'bp')
+-- mapcmd('<leader>bn', 'bn')
+-- mapcmd('<leader>bp', 'bp')
+mapcmd('<m-o>', 'bn')
+mapcmd('<m-i>', 'bp')
 mapcmd('<leader>bd', 'Bdelete')
 -- p: plugins
 mapcmd('<leader>pi', 'PackerInstall')
@@ -89,3 +91,5 @@ maplua('<leader>wr', 'vim.lsp.buf.remove_workspace_folder()')
 mapcmd('<leader>tt', 'FloatermToggle')
 mapcmd('<leader>tn', 'FloatermNew')
 
+
+-- other
