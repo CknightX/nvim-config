@@ -73,6 +73,15 @@ return require('packer').startup(function()
     -- startup screen
 --    use '~/Developer/aleph-nvim'
     use 'p-z-l/aleph-nvim'
-
+    -- TODOlist
+    use {
+        "folke/todo-comments.nvim",
+        requires = "nvim-lua/plenary.nvim"
+    }
+    -- which key
+    use {
+        'AckslD/nvim-whichkey-setup.lua',
+        requires = {'liuchengxu/vim-which-key'},
+    }
 end)
 

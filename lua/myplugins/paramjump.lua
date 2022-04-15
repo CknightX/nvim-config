@@ -23,6 +23,7 @@ end
 
 function M.setup()
     -- 最多只10个参数
+
     maputils.mapkey('n','<leader>pa',"0f(l")
     maputils.mapkey('n','<leader>pb',"0f(1f,w")
     maputils.mapkey('n','<leader>pc',"0f(2f,w")

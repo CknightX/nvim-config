@@ -17,9 +17,9 @@ end
 mapcmd('<leader>ft', 'NvimTreeToggle')
 mapcmd('<leader>ff', 'NvimTreeFocus')
 -- y: telescope
-mapcmd('<leader>yf', "Telescope find_files")
-mapcmd('<leader>yg', "Telescope live_grep")
-mapcmd('<leader>yb', "Telescope buffers")
+-- mapcmd('<leader>yf', "Telescope find_files")
+-- mapcmd('<leader>yg', "Telescope live_grep")
+-- mapcmd('<leader>yb', "Telescope buffers")
 -- c: quick command
 mapkey('n', '<leader>ce', ':e<space>')
 mapcmd('<leader>cw', 'w')
@@ -56,8 +56,8 @@ mapcmd('<leader>bd', 'Bdelete')
 mapkey('n','<leader>bsm','40<c-w>|') -- buffer small
 mapkey('n','<leader>bla','200<c-w>|') -- buffer large
 -- p: plugins
-mapcmd('<leader>pi', 'PackerInstall')
-mapcmd('<leader>pc', 'PackerClean')
+-- mapcmd('<leader>pi', 'PackerInstall')
+-- mapcmd('<leader>pc', 'PackerClean')
 -- s: search
 mapkey('n', '<leader>sw', '/\\<lt>\\><left><left>')
 -- r: replace
@@ -75,8 +75,8 @@ maplua('<leader>lk', 'vim.lsp.buf.hover()')
 maplua('<leader>lr', 'vim.lsp.buf.rename()')
 maplua('<leader>lh', 'vim.lsp.buf.signature_help()')
 maplua('<leader>la', 'vim.lsp.buf.code_action()')
-maplua('<leader>lf', 'vim.lsp.buf.formatting()')
-mapcmd('<leader>lb', 'SymbolsOutline')
+-- maplua('<leader>lf', 'vim.lsp.buf.formatting()')
+-- mapcmd('<leader>lb', 'SymbolsOutline')
 
 maplua('<leader>gD', 'vim.lsp.buf.declaration()')
 maplua('<leader>gd', 'vim.lsp.buf.definition()')

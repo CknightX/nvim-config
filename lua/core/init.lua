@@ -4,10 +4,10 @@ vim.cmd([[
     filetype plugin indent on
 ]])
 
-work_path = "D:/project"
+ work_path = "D:/project"
 -- set autochdir
 -- 设置项目目录
-vim.api.nvim_set_current_dir(work_path)
+-- vim.api.nvim_set_current_dir(work_path)
 
 vim.opt.number          = true
 vim.opt.relativenumber  = false
@@ -50,6 +50,7 @@ require("core.theme")
 -- plugins without extra configs are configured directly here
 require("impatient")
 require("Comment").setup()
+require("todo-comments").setup()
 
 -- myplugins
 require("myplugins.autorun").setup()
@@ -66,3 +67,4 @@ require("configs.outlinetree").config()
 require("configs.startscreen").config()
 require("configs.telescope").config()
 require("configs.bufferline").config()
+require("configs.whichkey").config()

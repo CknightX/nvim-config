@@ -64,7 +64,15 @@ function M.config()
     -- nvim-lspconfig config
     -- List of all pre-configured LSP servers:
     -- github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
-    local servers = { 'ccls', 'html', 'tsserver', 'rust_analyzer', 'bashls', 'pyright', "gopls"}
+    local servers = { 'ccls', -- c/cpp
+                      'html', -- html
+                      'tsserver', -- typescript/javascript
+                      'rust_analyzer', -- rust
+                      'bashls', -- bash
+                      'pyright', -- python
+                      "gopls", -- go
+                      "vls" -- vue
+                    } 
     for _, lsp in pairs(servers) do
         require('lspconfig')[lsp].setup {
             on_attach = on_attach
