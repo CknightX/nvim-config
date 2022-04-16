@@ -14,20 +14,20 @@ end
 
 -- keymaps
 -- f: file tree
-mapcmd('<leader>ft', 'NvimTreeToggle')
-mapcmd('<leader>ff', 'NvimTreeFocus')
+-- mapcmd('<leader>ft', 'NvimTreeToggle')
+-- mapcmd('<leader>ff', 'NvimTreeFocus')
 -- y: telescope
 -- mapcmd('<leader>yf', "Telescope find_files")
 -- mapcmd('<leader>yg', "Telescope live_grep")
 -- mapcmd('<leader>yb', "Telescope buffers")
 -- c: quick command
-mapkey('n', '<leader>ce', ':e<space>')
-mapcmd('<leader>cw', 'w')
-mapcmd('<leader>cW', 'wa')
-mapcmd('<leader>cE', 'e!')
-mapcmd('<leader>cq', 'q')
-mapcmd('<leader>cQ', 'q!')
-mapcmd('<leader>cx', 'x')
+-- mapkey('n', '<leader>ce', ':e<space>')
+-- mapcmd('<leader>cw', 'w')
+-- mapcmd('<leader>cW', 'wa')
+-- mapcmd('<leader>cE', 'e!')
+-- mapcmd('<leader>cq', 'q')
+-- mapcmd('<leader>cQ', 'q!')
+-- mapcmd('<leader>cx', 'x')
 -- w: window
 mapkey('n', '<m-h>', '<c-w>h')
 mapkey('n', '<m-H>', '<c-w>H')
@@ -36,10 +36,10 @@ mapkey('n', '<m-k>', '<c-w>k')
 mapkey('n', '<m-l>', '<c-w>l')
 mapkey('n', '<m-L>', '<c-w>L')
 
-mapkey('n', '<leader>w1', '<c-w>o')
-mapcmd('<leader>wx', 'x')
-mapcmd('<leader>ws', 'sp')
-mapcmd('<leader>wv', 'vs')
+-- mapkey('n', '<leader>w1', '<c-w>o')
+-- mapcmd('<leader>wx', 'x')
+-- mapcmd('<leader>ws', 'sp')
+-- mapcmd('<leader>wv', 'vs')
 -- window resize
 mapkey('n', '<m-left>', '<c-w><')
 mapkey('n', '<m-right>', '<c-w>>')
@@ -52,46 +52,46 @@ mapcmd('n', '<m-t>', 'vertical resize<space>')
 -- mapcmd('<leader>bp', 'bp')
 mapcmd('<m-o>', 'bn')
 mapcmd('<m-i>', 'bp')
-mapcmd('<leader>bd', 'Bdelete')
-mapkey('n','<leader>bsm','40<c-w>|') -- buffer small
-mapkey('n','<leader>bla','200<c-w>|') -- buffer large
+-- mapcmd('<leader>bd', 'Bdelete')
+-- mapkey('n','<leader>bsm','40<c-w>|') -- buffer small
+-- mapkey('n','<leader>bla','200<c-w>|') -- buffer large
 -- p: plugins
 -- mapcmd('<leader>pi', 'PackerInstall')
 -- mapcmd('<leader>pc', 'PackerClean')
 -- s: search
-mapkey('n', '<leader>sw', '/\\<lt>\\><left><left>')
+-- mapkey('n', '<leader>sw', '/\\<lt>\\><left><left>')
 -- r: replace
 -- 替换一行
-mapkey('n', '<leader>rl', ':s///g<left><left><left>')
+-- mapkey('n', '<leader>rl', ':s///g<left><left><left>')
 -- 替换所有
-mapkey('n', '<leader>ra', ':1,$s///g<left><left><left>')
+-- mapkey('n', '<leader>ra', ':1,$s///g<left><left><left>')
 -- l/g/w: language
 -- l: general
 -- g: goto
 -- w: workspace
-maplua('<leader>le', 'vim.diagnostic.open_float()')
-maplua('<leader>lq', 'vim.diagnostic.setloclist()')
-maplua('<leader>lk', 'vim.lsp.buf.hover()')
-maplua('<leader>lr', 'vim.lsp.buf.rename()')
-maplua('<leader>lh', 'vim.lsp.buf.signature_help()')
-maplua('<leader>la', 'vim.lsp.buf.code_action()')
+-- maplua('<leader>le', 'vim.diagnostic.open_float()')
+-- maplua('<leader>lq', 'vim.diagnostic.setloclist()')
+-- maplua('<leader>lk', 'vim.lsp.buf.hover()')
+-- maplua('<leader>lr', 'vim.lsp.buf.rename()')
+-- maplua('<leader>lh', 'vim.lsp.buf.signature_help()')
+-- maplua('<leader>la', 'vim.lsp.buf.code_action()')
 -- maplua('<leader>lf', 'vim.lsp.buf.formatting()')
 -- mapcmd('<leader>lb', 'SymbolsOutline')
 
-maplua('<leader>gD', 'vim.lsp.buf.declaration()')
-maplua('<leader>gd', 'vim.lsp.buf.definition()')
-maplua('<leader>gt', 'vim.lsp.buf.type_definition()')
-maplua('<leader>gi', 'vim.lsp.buf.implementation()')
-maplua('<leader>gp', 'vim.diagnostic.goto_prev()')
-maplua('<leader>gn', 'vim.diagnostic.goto_next()')
-maplua('<leader>gr', 'vim.lsp.buf.references()')
+-- maplua('<leader>gD', 'vim.lsp.buf.declaration()')
+-- maplua('<leader>gd', 'vim.lsp.buf.definition()')
+-- maplua('<leader>gt', 'vim.lsp.buf.type_definition()')
+-- maplua('<leader>gi', 'vim.lsp.buf.implementation()')
+-- maplua('<leader>gp', 'vim.diagnostic.goto_prev()')
+-- maplua('<leader>gn', 'vim.diagnostic.goto_next()')
+-- maplua('<leader>gr', 'vim.lsp.buf.references()')
 
-maplua('<leader>wa', 'vim.lsp.buf.add_workspace_folder()')
-maplua('<leader>wr', 'vim.lsp.buf.remove_workspace_folder()')
+-- maplua('<leader>wa', 'vim.lsp.buf.add_workspace_folder()')
+-- maplua('<leader>wr', 'vim.lsp.buf.remove_workspace_folder()')
 -- maplua('<leader>wl', 'print(vim.inspect(vim.lsp.buf.list_workspace_folders()))')
 -- t: terminal
-mapcmd('<leader>tt', 'FloatermToggle')
-mapcmd('<leader>tn', 'FloatermNew')
+-- mapcmd('<leader>tt', 'FloatermToggle')
+-- mapcmd('<leader>tn', 'FloatermNew')
 
 
 -- other

@@ -48,7 +48,12 @@ return require('packer').startup(function()
     use 'onsails/lspkind-nvim'
 
     -- git
-    use 'airblade/vim-gitgutter' -- TODO: better git integration
+    use {
+        'lewis6991/gitsigns.nvim',
+        config = function()
+            require('gitsigns').setup()
+        end
+    }
 
     -- status line
     use {
@@ -80,8 +85,15 @@ return require('packer').startup(function()
     }
     -- which key
     use {
-        'AckslD/nvim-whichkey-setup.lua',
-        requires = {'liuchengxu/vim-which-key'},
+        "folke/which-key.nvim",
+        config = function()
+            require("which-key").setup {
+            -- your configuration comes here
+            -- or leave it empty to use the default settings
+            -- refer to the configuration section below
     }
+    end
+}
+
 end)
 

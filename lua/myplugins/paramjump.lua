@@ -20,17 +20,24 @@ local function get_para_index(str, para_index)
 
 end
 
+-- 跳转到第几个参数的位置
+function M.jump(n)
+    local _cmd = ''
+    if n <= 0 then
+        return
+    elseif n == 1 then
+        _cmd = _cmd .. '0f(l'
+    else
+        _cmd = _cmd .. '0f(' .. tostring(n-1) .. 'f,w'
+    end
+    -- 这里不能用vim.cmd
+    vim.api.nvim_input(_cmd)
+end
+
 
 function M.setup()
     -- 最多只10个参数
-
-    maputils.mapkey('n','<leader>pa',"0f(l")
-    maputils.mapkey('n','<leader>pb',"0f(1f,w")
-    maputils.mapkey('n','<leader>pc',"0f(2f,w")
-    maputils.mapkey('n','<leader>pd',"0f(3f,w")
-    maputils.mapkey('n','<leader>pe',"0f(4f,w")
-    maputils.mapkey('n','<leader>pf',"0f(5f,w")
+    -- Do nothing
 end
 
 return M
-

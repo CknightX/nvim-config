@@ -51,6 +51,8 @@ require("core.theme")
 require("impatient")
 require("Comment").setup()
 require("todo-comments").setup()
+require("gitsigns").setup()
+
 
 -- myplugins
 require("myplugins.autorun").setup()
