@@ -14,5 +14,5 @@
 1.  install [nerd font](https://github.com/laishulu/Sarasa-Mono-SC-Nerd) to ensure the correct display of special symbols
 
 ## Usage
-Use `;` as leader key
+Use `;` as leader key<br/>
 You can get all the keymap from `lua/configs/whichkey.lua` & `lua/core/keymaps.lua`.
