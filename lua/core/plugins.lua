@@ -91,9 +91,13 @@ return require('packer').startup(function()
             -- your configuration comes here
             -- or leave it empty to use the default settings
             -- refer to the configuration section below
+        }
+        end
     }
-    end
-}
-
+    -- easymotion
+    use {
+        'phaazon/hop.nvim',
+        branch = 'v1', 
+    }
 end)
 

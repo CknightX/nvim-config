@@ -21,6 +21,14 @@ function M.config()
             q = {':q<cr>',''},
             Q = {':q!<cr>',''},
         },
+        e = {
+            name = 'Easy Move',
+            c = {':HopChar1<cr>','Char1'},
+            C = {':HopChar2<cr>','Char2'},
+            l = {':HopLine<cr>','Line'},
+            w = {':HopWord<cr>','Word'},
+            p = {':HopPattern<cr>','Pattern'},
+        },
         f = {
             name = 'File & Find',
             b = {'<cmd>Telescope buffers<CR>','Find Buffer'},

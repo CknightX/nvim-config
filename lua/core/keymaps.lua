@@ -13,6 +13,8 @@ local function maplua(key, txt)
 end
 
 -- keymaps
+-- move
+mapkey('i','<m-;>','<right>')
 -- f: file tree
 -- mapcmd('<leader>ft', 'NvimTreeToggle')
 -- mapcmd('<leader>ff', 'NvimTreeFocus')

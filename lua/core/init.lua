@@ -52,6 +52,7 @@ require("impatient")
 require("Comment").setup()
 require("todo-comments").setup()
 require("gitsigns").setup()
+require("hop").setup()
 
 
 -- myplugins
