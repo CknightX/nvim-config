@@ -8,7 +8,6 @@ vim.cmd([[
 -- set autochdir
 -- 设置项目目录
 -- vim.api.nvim_set_current_dir(work_path)
-
 vim.opt.number          = true
 vim.opt.relativenumber  = false
 vim.opt.termguicolors   = true
@@ -26,7 +25,9 @@ vim.opt.shiftwidth      = 4
 vim.opt.softtabstop     = 4
 vim.opt.expandtab       = true
 
+-- 键盘映射
 require("core.keymaps")
+-- 插件载入
 require("core.plugins")
 -- disable some useless standard plugins to save startup time
 -- these features have been better covered by plugins
@@ -44,6 +45,7 @@ vim.g.loaded_netrw             = 1
 vim.g.loaded_netrwPlugin       = 1
 vim.g.loaded_tutor_mode_plugin = 1
 vim.g.loaded_remote_plugins    = 1
+-- theme
 require("core.theme")
 
 -- Load plugin configs

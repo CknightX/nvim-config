@@ -109,6 +109,14 @@ function M.config()
             })
         }
     }
+    -- improve lsp diagnostics style
+    vim.o.updatetime = 500
+    vim.cmd [[autocmd! CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]]
+    -- disable diagnostic at line
+    vim.diagnostic.config({
+        virtual_text = false,
+        underline = true,
+    })
 
 end
 
