@@ -36,12 +36,12 @@ end
 
 -- jump to pos of next param
 function M.jump_to_prev_param()
-    vim.api.nvim_input('f,w')
+    vim.api.nvim_input('f,b')
 end
 
 -- jump to pos of prev param
 function M.jump_to_next_param()
-    vim.api.nvim_input('F,b')
+    vim.api.nvim_input('F,w')
 end
 
 -- 创建参数
