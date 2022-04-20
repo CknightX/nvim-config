@@ -34,10 +34,23 @@ function M.jump(n)
     vim.api.nvim_input(_cmd)
 end
 
+-- jump to pos of next param
+function M.jump_to_prev_param()
+    vim.api.nvim_input('f,w')
+end
 
-function M.setup()
-    -- 最多只10个参数
-    -- Do nothing
+-- jump to pos of prev param
+function M.jump_to_next_param()
+    vim.api.nvim_input('F,b')
+end
+
+-- 创建参数
+function M.create_param(n)
+    vim.api.nvim_input('a')
+    for i=1,n-1 do
+        vim.api.nvim_input(', ')
+    end
+    vim.api.nvim_input('<esc>F(a')
 end
 
 return M

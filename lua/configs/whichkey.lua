@@ -38,7 +38,8 @@ function M.config()
             t = {':NvimTreeToggle<cr>','File tree toggle'},
         },
         g ={
-            name = 'Git',
+            name = 'Go & GIT',
+            s = {":lua require('myplugins.quickpath').go_settings_path()<cr>",'Go settings path'}
 
         },
         j = {
@@ -58,9 +59,12 @@ function M.config()
             t = {'<cmd>lua vim.lsp.buf.type_definition()<CR>','Type Definition'},
         },
         p = {
-            name = 'Plugins',
-            c = {'<cmd>PackerClean<CR>','Clean plugins'},
-            i = {'<cmd>PackerInstall<CR>','Install plugins'},
+            name = 'Params',
+            j = {":lua require('myplugins.paramer').jump()<left>", 'Param jump'},
+            c = {":lua require('myplugins.paramer').create_param()<left>", 'Param create'},
+            n = {":lua require('myplugins.paramer').jump_to_next_param()<cr>", 'Param next'},
+            p = {":lua require('myplugins.paramer').jump_to_prev_param()<cr>", 'Param prev'},
+
         },
         r = {
             name = 'Replace',
@@ -68,13 +72,21 @@ function M.config()
             l = {':s///g<left><left><left>','Replace line'},
         },
         s = {
-            name = 'Show',
-            t = {':FloatermToggle<cr>','Terminal'}
+            name = 'Show & Save',
+            t = {':FloatermToggle<cr>','Terminal'},
         },
         w = {
-            s = {':sp<cr>','Horizontal Split Window'},
+            name = "Window & Workspace",
+            h = {':sp<cr>','Horizontal Split Window'},
             v = {':vs<cr>','Vertical Window'},
             x = {':x<cr>','Close'},
+            s = {
+                name = "Workspace",
+                a = {':WorkspacesAdd  .<left><left>','Add workspace'},
+                r = {':WorkspacesRemove ','Remove workspace'},
+                l = {':WorkspacesList<cr>','List workspace'},
+                o = {':WorkspacesOpen ','Open workspace'},
+            }
         },
     }
     wk.register(keymaps, opts)

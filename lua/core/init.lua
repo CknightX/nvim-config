@@ -3,8 +3,6 @@ vim.cmd([[
     syntax on
     filetype plugin indent on
 ]])
-
- work_path = "D:/project"
 -- set autochdir
 -- 设置项目目录
 -- vim.api.nvim_set_current_dir(work_path)
@@ -55,12 +53,11 @@ require("Comment").setup()
 require("todo-comments").setup()
 require("gitsigns").setup()
 require("hop").setup()
+require("workspaces").setup()
 
 
 -- myplugins
 require("myplugins.autorun").setup()
-require("myplugins.paramjump").setup()
-require("myplugins.quickpath").setup()
 
 
 -- plugins with config
