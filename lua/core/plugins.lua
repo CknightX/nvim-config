@@ -102,5 +102,7 @@ return require('packer').startup(function()
     }
     -- workspace
     use 'natecraddock/workspaces.nvim'
+    -- cursorline
+    use 'yamatsum/nvim-cursorline'
 end)
 

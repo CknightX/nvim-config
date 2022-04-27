@@ -70,3 +70,15 @@ require("configs.startscreen").config()
 require("configs.telescope").config()
 require("configs.bufferline").config()
 require("configs.whichkey").config()
+require("nvim-cursorline").setup {
+  cursorline = {
+    enable = true,
+    timeout = 1000,
+    number = false,
+  },
+  cursorword = {
+    enable = true,
+    min_length = 3,
+    hl = { underline = true },
+  }
+}
