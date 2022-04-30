@@ -27,6 +27,8 @@ function M.compile_run()
         run_shell("bash %")
     elseif filetype == "go" then
         run_shell("go run %")
+    elseif filetype == "haskell" then
+        run_shell("runhaskell %")
     end
 end
 
