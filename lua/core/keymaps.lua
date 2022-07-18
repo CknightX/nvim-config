@@ -38,6 +38,10 @@ mapkey('n', '<m-k>', '<c-w>k')
 mapkey('n', '<m-l>', '<c-w>l')
 mapkey('n', '<m-L>', '<c-w>L')
 
+
+mapkey('i', '<m-l>', '<right>')
+mapkey('i', '<m-h>', '<left>')
+
 -- mapkey('n', '<leader>w1', '<c-w>o')
 -- mapcmd('<leader>wx', 'x')
 -- mapcmd('<leader>ws', 'sp')
